@@ -6,12 +6,14 @@ pipeline{
     stages{
         stage('BUILD'){
             steps{
-                echo "Creating build for ${params.BRANCH} platform"
+                echo "Checking Linux commands"
             }
         }
         stage('RUN AUTOMATION'){
             steps{
-                echo "Running Automation on ${params.BRANCH} browser"
+                echo "Hello, "
+		echo "hello from bash"
+		echo "Who I'm $SHELL"
             }
         }
         stage('Deploy'){

@@ -6,12 +6,12 @@ pipeline{
     stages{
         stage('BUILD'){
             steps{
-                echo "Creating build for ${params.ENVIRONMENT} on ${params.PLATFORM} platform"
+                echo "Creating build for ${params.BRANCH} platform"
             }
         }
         stage('RUN AUTOMATION'){
             steps{
-                echo "Running Automation on ${params.BROWSER} browser"
+                echo "Running Automation on ${params.BRANCH} browser"
             }
         }
         stage('Deploy'){

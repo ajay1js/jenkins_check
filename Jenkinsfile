@@ -6,6 +6,7 @@ pipeline{
     stages{
         stage('BUILD'){
             steps{
+	        git branch: "${params.BRANCH}"
                 echo "Checking Linux commands"
             }
         }

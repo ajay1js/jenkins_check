@@ -9,11 +9,11 @@ pipeline{
                 checkout([$class: 'GitSCM',
                          branches: [[name: "${params.TAG}"]],
                          doGenerateSubmoduleConfigurations: false,
-                         extensions: []
+                         extensions: [],
                          gitTool: 'Default',
                          submoduleCfg: [],
                          userRemoteConfigs: [[url: 'https://github.com/ajay1js/jenkins_check.git']]
-                echo "Checking Linux commands"])
+                         echo "Checking Linux commands"])
             }
         }
         stage('RUN AUTOMATION'){

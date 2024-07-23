@@ -12,7 +12,7 @@ pipeline{
                          extensions: [],
                          gitTool: 'Default',
                          submoduleCfg: [],
-                         userRemoteConfigs: [[url: 'https://github.com/ajay1js/jenkins_check.git']]
+                         userRemoteConfigs: [[url: 'https://github.com/ajay1js/jenkins_check.git']],
                          echo "Checking Linux commands intentionally"])
             }
         }

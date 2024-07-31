@@ -1,9 +1,9 @@
 pipeline {
     agent any
     parameters {
-        gitParameter name: 'TAG',
-                     type: 'PT_TAG',
-                     defaultValue: 'main'
+        gitParameter(name: 'TAG', type: 'PT_TAG', defaultValue: 'main')
+	string(name: 'NAME', description: 'Please tell me your name')
+	choice(name: 'GENDER', choices: ['Male', 'Female'], description: 'Choose Gender')
     }
     stages {
         stage('Example') {
